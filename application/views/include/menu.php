@@ -15,13 +15,15 @@
                 <!--<label class="checkbox">
                   <input type="checkbox" name="remember" value="1"> Remember Me
                 </label>-->
+
+                <button type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
+
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" name="submit" class="btn btn-primary">Log in</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">sluiten</button>
-
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
-            </form>
         </div>
     </div>
 </div>
@@ -38,12 +40,12 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                     </button>                             
-                    <a class="navbar-brand" href="index.php"><span>Tedx</span>pxl</a> 
+                    <a class="navbar-brand" href="index.html"><span>Tedx</span>pxl</a> 
                 </div>                         
                 <div class="navbar-collapse collapse "> 
                     <ul class="nav navbar-nav"> 
                         <li class="active">
-                            <a href="index.php">Home</a>
+                            <a href="index.html">Home</a>
                         </li>                                 
                         <li> 
                             <a href="blog.html">over ons</a>
@@ -60,7 +62,7 @@
                         <li>
                             <?php
                             if ($this->session->userdata('isLoggedIn')) {
-                                echo '<a href="' . base_url() . 'index.php/Welcome/logout_user">Log uit!</a>';
+                                echo '<a href="'.base_url().'index.php/Welcome/logout_user">aangemeld</a>';
                             } else {
                                 echo '<a data-toggle="modal" href="#myModal"><i class="fa fa-users"></i>aanmelden</a>';
                             }
