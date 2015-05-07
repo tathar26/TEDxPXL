@@ -2,10 +2,9 @@
 <html>
   <head> 
         <meta charset="utf-8">         
-        <title>Moderna - Bootstrap 3 flat corporate template</title>         
+        <title>TEDxPXL</title>         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>         
-        <meta name="description" content=""/>         
-        <meta name="author" content="http://bootstraptaste.com"/>         
+        <meta name="description" content="TEDxPXL"/>              
         <!-- css -->         
         <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>         
         <link href="assets/css/fancybox/jquery.fancybox.css" rel="stylesheet">         

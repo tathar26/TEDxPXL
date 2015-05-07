@@ -3,10 +3,10 @@
                         <div class="col-lg-3"> 
                             <div class="widget"> 
                                 <h5 class="widgetheading">Get in touch with us</h5> 
-                                <address> <strong>Moderna company Inc</strong><br> 
-					 Modernbuilding suite V124, AB 01<br> 
-					 Someplace 16425 Earth </address> 
-                                <p> <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br> <i class="icon-envelope-alt"></i> email@domainname.com
+                                <address> <strong>Hogeschool PXL</strong><br> 
+					 Elfde-Liniestraat 24<br> 
+					 B-3500 Hasselt </address> 
+                                <p> <i class="icon-phone"></i> + 32 11 77 55 55 - + 32 11 77 55 59 <br> <i class="icon-envelope-alt"></i> info@pxl.be
 </p> 
                             </div>                             
                         </div>                         
@@ -65,7 +65,7 @@
                         <div class="row"> 
                             <div class="col-lg-6"> 
                                 <div class="copyright"> 
-                                    <p> <span>&copy; Moderna 2014 All right reserved. By </span><a href="http://bootstraptaste.com" target="_blank">Bootstraptaste</a> </p> 
+                                    <p>&copy; TEDxPXL 2015 All right reserved.</p> 
                                 </div>                                 
                             </div>                             
                             <div class="col-lg-6"> 
