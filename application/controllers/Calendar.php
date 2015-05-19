@@ -1,7 +1,30 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Contact extends CI_Controller {
+class Calendar extends CI_Controller {
+    
+    public function __construct()
+     {
+          parent::__construct();
+          $this->load->library('session');
+          
+
+			
+		$this->load->library('calendar');
+               
+
+		
+
+		
+          
+          $this->load->helper('form');
+          $this->load->helper('url');
+          $this->load->helper('html');
+          $this->load->library('form_validation');
+          //load the login model
+          
+     }
+
 
   /**
    * Index Page for this controller.
@@ -18,25 +41,18 @@ class Contact extends CI_Controller {
    * map to /index.php/welcome/<method_name>
    * @see http://codeigniter.com/user_guide/general/urls.html
    */
-    
-     public function __construct()
-     {
-          parent::__construct();
-          $this->load->library('session');
-          $this->load->helper('form');
-          $this->load->helper('url');
-          $this->load->helper('html');
-          $this->load->library('form_validation');
-          
-          //load the login model
-          
-     }
   public function index()
-  {
-    $this->load->view('header');
+  {  
+      
+    $data=array('year'=>$this->uri->segment(3),
+               'month'=>$this->uri->segment(4));  
+    $this->load->view('head_calendar');
     $this->load->view('menu');
-    $this->load->view('contact');
+    $this->load->view('calendar',$data);
     $this->load->view('footer');
     $this->load->view('modal');
   }
+  
+
+  
 }

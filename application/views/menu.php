@@ -43,19 +43,19 @@
                 <div class="navbar-collapse collapse "> 
                     <ul class="nav navbar-nav"> 
                         <li class="active">
-                            <a href="index.php">Home</a>
+                            <a href="<?php base_url()?>/Project/index.php">Home</a>
                         </li>                                 
                         <li> 
                             <a href="blog.html">over ons</a>
                         </li>
                         <li>
-                            <a href="portfolio.html">evenementen</a>
+                            <a href="<?php base_url()?>index.php/Calendar">evenementen</a>
                         </li>                                 
                         <li>
                             <a href="blog.html">forum</a>
                         </li>                                 
                         <li>
-                            <a href="contact.html">Contacteer ons</a>
+                            <a href="<?php base_url()?>index.php/Contact">Contacteer ons</a>
                         </li>
                         <li>
                             <?php
