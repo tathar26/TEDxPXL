@@ -1,35 +1,10 @@
-<!-- modal login -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Meld u aan</h4>
-            </div>
-            <div class="modal-body">
-                <?php echo form_open('Welcome/login_user') ?>
 
-                <input type="text" id="email" class="span4" name="email" placeholder="Email Address">
-                <input type="password" id="password" class="span4" name="password" placeholder="Password">
-
-                <!--<label class="checkbox">
-                  <input type="checkbox" name="remember" value="1"> Remember Me
-                </label>-->
-            </div>
-            <div class="modal-footer">
-                <button type="submit" name="submit" class="btn btn-primary">Log in</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">sluiten</button>
-
-            </div>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- modal login -->  
 
 <div id="wrapper"> 
     <!-- start header -->             
     <header> 
+        <script src="<?php echo base_url(); ?>resources/bootstrap/js/jquery-1.7.2.min.js"></script>
+    <script src="<?php echo base_url(); ?>resources/bootstrap/js/bootstrap.min.js"></script>
         <div class="navbar navbar-default navbar-static-top"> 
             <div class="container"> 
                 <div class="navbar-header"> 
@@ -41,7 +16,7 @@
                     <a class="navbar-brand" href="index.php"><span>Tedx</span>pxl</a> 
                 </div>                         
                 <div class="navbar-collapse collapse "> 
-                    <ul class="nav navbar-nav"> 
+                    <ul class="nav navbar-nav pull-right"> 
                         <li class="active">
                             <a href="<?php base_url()?>/Project/index.php">Home</a>
                         </li>                                 
@@ -52,23 +27,42 @@
                             <a href="<?php base_url()?>index.php/Calendar">evenementen</a>
                         </li>                                 
                         <li>
-                            <a href="blog.html">forum</a>
+                            <a href="<?php echo site_url('thread'); ?>">forum</a>
                         </li>                                 
                         <li>
-                            <a href="<?php base_url()?>index.php/Contact">Contacteer ons</a>
+                            <a href="<?php base_url()?>/Project/index.php/Contact">Contacteer ons</a>
                         </li>
-                        <li>
-                            <?php
-                            if ($this->session->userdata('isLoggedIn')) {
-                                echo '<a href="' . base_url() . 'index.php/Welcome/logout_user">Log uit!</a>';
-                            } else {
-                                echo '<a data-toggle="modal" href="#myModal"><i class="fa fa-users"></i>aanmelden</a>';
-                            }
-                            ?></li>
+                                             
+                        <?php if ($this->session->userdata('cibb_logged_in') != 1): ?>
+                       
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            <li>
+                                <form class="well" action="<?php echo site_url('user/join'); ?>" method="post" style="margin: 5px 10px;">
+                                <label>Username</label>
+                                <input type="text" name="row[username]" class="span3" placeholder="">
+                                <label>Password</label>
+                                <input type="password" name="row[password]" class="span3" placeholder="">
+                                <input type="submit" name="btn-login" class="btn btn-primary" value="Login"/>
+                                </form>
+                            </li>
+                            </ul>
+                            <li><a href="<?php echo site_url('user/join'); ?>">Join !</a></li>
+                        </li>
+                        <?php else: ?>
+						<?php if ($this->session->userdata('admin_area') != 0): ?>
+                        <li><a href="<?php echo site_url('admin'); ?>">Admin</a></li>
+						<?php endif; ?>
+                        <li><a href="<?php echo site_url('user/logout'); ?>">Logout</a></li>
+                        <?php endif; ?>
+                     
+                    
 
                     </ul>                             
                 </div>                         
             </div>                     
         </div>                 
-    </header>             
+    </header>            
+    <body
     <!-- end header -->  

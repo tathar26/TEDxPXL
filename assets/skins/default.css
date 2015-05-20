@@ -54,7 +54,7 @@ header .nav li.active ul.dropdown-menu li.active a{
 
 
 .breadcrumb {
-  background-color: #68A4C4;
+  background-color: white;
 }
 
 /* === border color === */
@@ -222,3 +222,7 @@ footer{
 	background:#68A4C4;
 }
 
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
