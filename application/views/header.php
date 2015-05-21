@@ -13,6 +13,7 @@
         <link href="<?php base_url()?>/Project/assets/css/jcarousel.css" rel="stylesheet"/>         
         <link href="<?php base_url()?>/Project/assets/css/flexslider.css" rel="stylesheet"/>         
         <link href="<?php base_url()?>/Project/assets/css/style.css" rel="stylesheet"/>     
+<<<<<<< HEAD
         
 		 <!-- Contact -->
 		<link rel="stylesheet" href="<?php base_url()?>/Project/assets/css/font-awesome.min.css">
@@ -25,6 +26,8 @@
                 
 		 
 		 
+=======
+>>>>>>> 20364baba8755b6e611165c4ad51668c1138129d
         <!-- Theme skin -->         
         <link href="<?php base_url()?>/Project/assets/skins/default.css" rel="stylesheet"/>         
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->         

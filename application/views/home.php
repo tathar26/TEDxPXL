@@ -14,25 +14,19 @@
                                     <li> 
                                         <img src="assets/img/slides/1.jpg" alt=""/>                                         
                                         <div class="flex-caption"> 
-                                            <h3>Modern Design</h3> 
-                                            <p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
-                                            <a href="#" class="btn btn-theme">Learn More</a> 
+                                            <h3>Independently</h3> 
                                         </div>                                         
                                     </li>                                     
                                     <li> 
                                         <img src="assets/img/slides/2.jpg" alt=""/>                                         
                                         <div class="flex-caption"> 
-                                            <h3>Fully Responsive</h3> 
-                                            <p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
-                                            <a href="#" class="btn btn-theme">Learn More</a> 
+                                            <h3>Organized</h3> 
                                         </div>                                         
                                     </li>                                     
                                     <li> 
                                         <img src="assets/img/slides/3.jpg" alt=""/>                                         
                                         <div class="flex-caption"> 
-                                            <h3>Clean & Fast</h3> 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
-                                            <a href="#" class="btn btn-theme">Learn More</a> 
+                                            <h3>Cutting-edge</h3> 
                                         </div>                                         
                                     </li>                                     
                                 </ul>                                 
@@ -48,7 +42,13 @@
                         <div class="col-lg-12"> 
                             <div class="big-cta"> 
                                 <div class="cta-text"> 
-                                    <h2><span>TEDxPXL</span> over ons</h2> 
+                                    <h2><span>TEDxPXL</span> About us</h2> 
+									<div>
+									<p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.</p> 
+									<p>At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group.</p>
+									<p>These local, self-organized events are branded TEDx, where x = independently organized TED event.</p> 
+									<p>The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.</p>
+									</div>
                                 </div>                                 
                             </div>                             
                         </div>                         
@@ -56,4 +56,4 @@
                 </div>                 
             </section> 
 </body>
-            <footer> 
+<footer> 
