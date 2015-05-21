@@ -1,23 +1,67 @@
-<div class="cta-text"> 
-<form id="ContactFormulier">
-	
-		<label for="naam">Naam:</label><br />
-		<input id="naam" class="input" naam="naam" type="text" value="Jos" size="30" /><br />
-		
-		<label for="naam">Achternaam:</label><br />
-		<input id="achternaam" class="input" naam="achternaam" type="text" value="Trekbos" size="30" /><br />
-		
-		<label for="email">TelefoonNummer:</label><br />
-		<input id="gsm" class="input" naam="gsm" type="text" value="047663919191" size="30" /><br />
-	
-		<label for="email">E-mail:</label><br />
-		<input id="email" class="input" naam="email" type="text" value="Jos@Trekbos.be" size="30" /><br />
-	
-		<label for="bericht">Bericht:</label><br />
-		<textarea id="bericht" class="input" naam="bericht" rows="5" cols="50"></textarea><br />
-	
-		<img src="http://designshack.net/wp-content/uploads/killcaptcha-1.jpg" height="100" width="200"></img>
-		<input id="Verzend" type="submit" value="Verstuur" />
-</form>						
-</div>                                 
+<div class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Voornaam" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Achternaam" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Telefoon" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Jou bericht komt hier." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+</style>
+</div>                               
 <footer> 
