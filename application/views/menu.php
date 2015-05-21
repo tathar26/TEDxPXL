@@ -25,7 +25,7 @@
                             <a href="blog.html">over ons</a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('calendar/display'); ?>">evenementen</a>
+                            <a href="<?php echo site_url('calendar/display/'.date('Y').'/'.date('m')); ?>">evenementen</a>
                         </li>                                 
                         <li>
                             <a href="<?php echo site_url('thread'); ?>">forum</a>
