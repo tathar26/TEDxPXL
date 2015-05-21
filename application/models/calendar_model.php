@@ -36,9 +36,31 @@ class Calendar_model extends CI_Model {
 		return $cal_data;
 	}
 
+	function add_calendar_date($date, $data){
+		
+		if ($this->db->select('date')->from('calendar')->where('date',$date)->count_all_results()){
+			
+			$this->db->where('date',$date)->update('calendar',array(
+				'date'=>$date,
+				'data'=>$data
+			));
+			
+		}else{
+			
+			$this->db->insert('calendar',array(
+				'date'=>$date,
+				'data'=>$data
+			));
+			
+		}
+		
+	}
+
 	function generate($year, $month) {
 
 		$this -> load -> library('calendar', $this -> conf);
+		
+		$this->add_calendar_date('2015-05-02', 'some more testing');
 
 		$cal_data = $this -> get_calendar_data($year, $month);
 
