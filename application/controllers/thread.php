@@ -139,8 +139,10 @@ class Thread extends CI_Controller {
         $this->data['page']   = $this->pagination->create_links();
         $this->data['thread'] = $thread;
         $this->data['posts']  = $posts;
-        
-        $this->load->view('header', $this->data);
+        $this->load->view('head_forum');
+         $this->load->view('header',$this->data);
+         
+    $this->load->view('menu');
         $this->load->view('thread/talk');
         $this->load->view('footer');
     }

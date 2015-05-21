@@ -18,19 +18,19 @@
                 <div class="navbar-collapse collapse "> 
                     <ul class="nav navbar-nav pull-right"> 
                         <li class="active">
-                            <a href="<?php base_url()?>/Project/index.php">Home</a>
+                            <a href="<?php echo site_url(''); ?>">Home</a>
                         </li>                                 
                         <li> 
                             <a href="blog.html">over ons</a>
                         </li>
                         <li>
-                            <a href="<?php base_url()?>index.php/Calendar">evenementen</a>
+                            <a href="<?php echo site_url('calendar'); ?>">evenementen</a>
                         </li>                                 
                         <li>
                             <a href="<?php echo site_url('thread'); ?>">forum</a>
                         </li>                                 
                         <li>
-                            <a href="<?php base_url()?>/Project/index.php/Contact">Contacteer ons</a>
+                            <a href="<?php echo site_url('contact'); ?>">Contacteer ons</a>
                         </li>
                                              
                         <?php if ($this->session->userdata('cibb_logged_in') != 1): ?>

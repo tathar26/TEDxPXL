@@ -81,6 +81,7 @@ class User_model extends CI_Model {
         if (count($this->error) == 0) {
             $key = $this->config->item('encryption_key');
             $row['password'] = $this->encrypt->encode($row['password'], $key);
+            $row['role_id'] = "3";
             $this->db->insert(TBL_USERS, $row);
         } else {
             $this->error_count = count($this->error);
