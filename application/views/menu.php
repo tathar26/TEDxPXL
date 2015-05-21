@@ -32,8 +32,8 @@
                         </li>                                 
                         <li>
                             <a href="<?php echo site_url('contact'); ?>">Contacteer ons</a>
-                        </li>
-                                             
+                        </li>                              
+						
                         <?php if ($this->session->userdata('cibb_logged_in') != 1): ?>
                        
                         <li class="dropdown">
@@ -60,10 +60,26 @@
                      
                     
 
-                    </ul>                             
-                </div>                         
+                    </ul>      
+
+                                         
             </div>                     
         </div>                 
+		<div class="zoekbalk">
+                            <script>
+							  (function() {
+								var cx = '017555237901191991278:ootki6po95s';
+								var gcse = document.createElement('script');
+								gcse.type = 'text/javascript';
+								gcse.async = true;
+								gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+									'//cse.google.com/cse.js?cx=' + cx;
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>		
+</div>							
     </header>            
     <body
     <!-- end header -->  

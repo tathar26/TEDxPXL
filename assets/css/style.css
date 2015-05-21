@@ -26,6 +26,12 @@ body {
 a:active {
 	outline:0;
 }
+.zoekbalk{
+width: 300px;
+float: right;
+margin-right: 0;
+}
+
 
 .clear {
 	clear:both;
@@ -161,7 +167,7 @@ header .navbar {
 }
 
 header .navbar-nav > li  {
-    padding-bottom: 30px;
+    
     padding-top: 30px;
 }
 
@@ -799,7 +805,7 @@ h4.heading {
 	font-weight:700;
 }
 
-.heading { margin-bottom: 30px; }
+.heading { margin-bottom: 10px; }
 
 .heading {
 	position: relative;
