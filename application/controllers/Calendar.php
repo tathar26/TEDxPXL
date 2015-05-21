@@ -52,7 +52,12 @@ class Calendar extends CI_Controller {
     $this->load->view('footer');
     $this->load->view('modal');
   }
-  
+  public function newEvent(){
+      $this->load->view('head_calendar');
+      $this->load->view('newEvent');
+      $this->load->view('footer');
+      
+  }
 
   
 }

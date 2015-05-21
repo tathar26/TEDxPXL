@@ -5,6 +5,7 @@
     <header> 
         <script src="<?php echo base_url(); ?>resources/bootstrap/js/jquery-1.7.2.min.js"></script>
     <script src="<?php echo base_url(); ?>resources/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Project/assets/js/evenement.js"></script>
         <div class="navbar navbar-default navbar-static-top"> 
             <div class="container"> 
                 <div class="navbar-header"> 
