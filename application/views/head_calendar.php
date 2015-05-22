@@ -35,15 +35,21 @@
 	background: #F3F3F3;
 }
 
-.day_listing {
+.day_num {
 	display: block;
 	text-align: right;
-	font-size: 15px;
+	font-size: 20px;
 	color: #2C2C2C;
-	padding: 5px 5px 0 0;
+	padding: 0px;
 }
 
-div.today {
+.content {
+	font-family: Arial;
+	font-size: 12px;
+	padding: 4px;
+}
+
+.highlight {
 	background: #E9EFF7;
 	height: 100%;
 }
@@ -68,5 +74,6 @@ div.today {
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
         <script type="text/javascript" src="/Project/assets/js/evenement.js"></script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     </head>
     <body>
