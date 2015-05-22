@@ -45,13 +45,12 @@
 
 .content {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 4px;
 }
 
 .highlight {
-	background: #E9EFF7;
-	height: 100%;
+	background: #82B9E7;
 }
 </style>
 
@@ -74,6 +73,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
         <script type="text/javascript" src="/Project/assets/js/evenement.js"></script>
-    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </head>
     <body>

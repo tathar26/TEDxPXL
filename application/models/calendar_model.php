@@ -31,7 +31,7 @@ class Calendar_model extends CI_Model {
 			   		<div class="content">{content}</div>
 			   {/cal_cell_content}
 			   {cal_cell_content_today}
-			   		<div class="day_num highlight">{day}/div>
+			   		<div class="day_num highlight">{day}</div>
 			   		<div class="content">{content}</div>
 			   {/cal_cell_content_today}
 			
@@ -81,8 +81,6 @@ class Calendar_model extends CI_Model {
 	function generate($year, $month) {
 
 		$this -> load -> library('calendar', $this -> conf);
-
-		$this -> add_calendar_date('2015-05-02', 'some more testing');
 
 		$cal_data = $this -> get_calendar_data($year, $month);
 

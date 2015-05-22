@@ -8,7 +8,22 @@
 		$(document).ready(function() {
 		  $('.calendar .day').click(function(){
 		  	day_num = $(this).find('.day_num').html();
-		  	alert(day_num);
+		  	day_data = prompt('Voer een activiteit in!');
+		  	if (day_data != null) {
+		  		
+		  		$.ajax({
+		  			url: window.location,
+		  			type: 'POST',
+		  			data: {
+		  				day: day_num,
+		  				data: day_data
+		  			},
+		  			success: function(msg){
+		  				location.reload();
+		  			}
+		  		});
+		  		
+		  	}
 		  });
 		});
 		
